@@ -14,7 +14,42 @@ This comprehensive guide details how to securely install and configure Proxmox V
 
 ## Table of Contents
 
-[Previous sections remain the same...]
+1. [Prerequisites](#prerequisites)
+2. [VPN Server Configuration](#vpn-server-configuration)
+   - [Initial VPS Access](#1-initial-vps-access)
+   - [Install and Configure WireGuard](#2-install-and-configure-wireguard)
+3. [Local Machine VPN Setup](#local-machine-vpn-setup)
+   - [Cross-Platform Configuration](#cross-platform-configuration)
+   - [Create Client Configuration](#create-client-configuration)
+4. [Proxmox Installation and Configuration](#proxmox-installation-and-configuration)
+   - [Boot into Rescue Mode](#1-boot-into-rescue-mode)
+   - [Install Debian](#2-install-debian)
+   - [Install Proxmox](#3-install-proxmox)
+   - [Configure as VPN Client](#4-configure-as-vpn-client)
+   - [Restrict Proxmox Web Interface to VPN](#5-restrict-proxmox-web-interface-to-vpn)
+5. [Security Hardening](#security-hardening)
+   - [SSH Key Management](#1-ssh-key-management)
+   - [Firewall Configuration](#2-firewall-configuration)
+   - [Security Auditing](#3-security-auditing)
+6. [Advanced Configuration](#advanced-configuration)
+   - [Backup Strategy](#1-backup-strategy)
+   - [High Availability](#2-high-availability)
+   - [Load Balancing](#3-load-balancing)
+7. [Monitoring and Alerting](#monitoring-and-alerting)
+   - [System Monitoring](#1-system-monitoring)
+   - [Log Monitoring](#2-log-monitoring)
+8. [Troubleshooting Guide](#troubleshooting-guide)
+   - [VPN Connectivity Issues](#1-vpn-connectivity-issues)
+   - [Proxmox Web UI Access](#2-proxmox-web-ui-access)
+   - [SSH Connection Problems](#3-ssh-connection-problems)
+9. [Maintenance Procedures](#maintenance-procedures)
+   - [Regular Updates](#1-regular-updates)
+   - [Security Checks](#2-security-checks)
+   - [Backup Verification](#3-backup-verification)
+10. [Additional Considerations](#additional-considerations)
+    - [SSL Certificates](#1-ssl-certificates)
+    - [Performance Optimization](#2-performance-optimization)
+11. [References](#references)
 
 ## Prerequisites
 
