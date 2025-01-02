@@ -1,0 +1,30 @@
+cat > .gitignore << 'EOF'
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+terraform.tfvars
+
+# Ansible
+*.retry
+
+# Environment variables
+.env
+*.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Sensitive information
+**/secrets/
+*private*.key
+*secret*.key
+EOF
