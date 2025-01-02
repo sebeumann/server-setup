@@ -23,7 +23,7 @@ Before beginning the installation, ensure you have:
 - SSH key pair generated on your local machine
   ```bash
   # Generate if needed - DO NOT store private key in public locations
-  ssh-keygen -t ed25519 -C "your_email@example.com"
+  ssh-keygen -t ed25519 -C "your_email@example.com" ~/.ssh/id_ed25519_server
   ```
 - WireGuard tools installed locally
   - Linux: `apt install wireguard` or equivalent
