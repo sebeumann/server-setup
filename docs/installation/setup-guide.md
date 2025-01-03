@@ -12,38 +12,33 @@ This comprehensive guide details how to securely install and configure Proxmox V
 - Detailed backup and monitoring strategies
 - High availability and load balancing configurations
 
-## Repository Structure
+## Installation Methods
+This guide describes the manual installation process for setting up Proxmox VE on a Hetzner dedicated server with a VPN gateway. Generally, this repository offers two approaches available for this setup:
 
-This guide references configuration files that should be stored in your repository. Here's the recommended structure:
+1. Manual Installation (This Guide)
+This guide provides step-by-step instructions for manually setting up and configuring all components. This approach is recommended for:
 
-```
-proxmox-setup/
-├── config/
-│   ├── vpn/
-│   │   ├── wireguard-server.conf
-│   │   └── wireguard-client.conf
-│   ├── ssh/
-│   │   └── sshd_config
-│   ├── firewall/
-│   │   ├── ufw.rules
-│   │   └── pve-firewall.rules
-│   ├── proxmox/
-│   │   ├── pveproxy.conf
-│   │   └── pve-ha-config
-│   ├── monitoring/
-│   │   ├── prometheus.yml
-│   │   └── grafana-dashboards/
-│   ├── haproxy/
-│   │   └── haproxy.cfg
-│   └── security/
-│       ├── fail2ban.conf
-│       └── rkhunter.conf
-└── scripts/
-    ├── install-proxmox.sh
-    ├── setup-vpn.sh
-    ├── configure-firewall.sh
-    └── security-hardening.sh
-```
+- Learning and understanding each component of the setup
+- Custom configurations not covered by automation
+- Situations requiring maximum flexibility
+- Testing and development environments
+
+2. Automated Installation
+An alternative automated approach using Infrastructure as Code (IaC) is available, utilizing:
+
+- Terraform for VPS/VPN Gateway provisioning
+- Ansible for configuration management
+- Version-controlled configuration files
+- Reproducible deployment process
+
+The automated approach is recommended for:
+
+- Production environments
+- Multiple server deployments
+- Consistent, reproducible setups
+- Team-based management
+
+→ For the automated approach, see Automated Deployment Guide
 
 ## Table of Contents
 
