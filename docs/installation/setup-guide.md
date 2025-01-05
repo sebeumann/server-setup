@@ -1,4 +1,4 @@
-# Secure Proxmox VE Installation on Hetzner Dedicated Server
+# Proxmox VE Installation on Hetzner Dedicated Server
 
 This comprehensive guide details how to securely install and configure Proxmox VE on a Hetzner dedicated server using a VPS in Hetzner Cloud as a VPN gateway. The setup ensures maximum security by restricting access to your infrastructure through a WireGuard VPN.
 
